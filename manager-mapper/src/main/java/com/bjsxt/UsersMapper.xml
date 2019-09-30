@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mapper namespace="com.bjsxt.UserMapper">
+<insert id="insertUser" parameterType="com.bjsxt.Users">
+    insert into users(username,userage) values(#{username},#{userage})
+</insert>
+    <select id="selectUserAll" parameterType="com.bjsxt.Users">
+        select * from users;
+    </select>
+</mapper>
